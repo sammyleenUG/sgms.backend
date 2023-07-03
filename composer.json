@@ -27,8 +27,8 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/Helpers/distance.php"
-        ]
+            "app/helpers.php"
+        ]        
     },
     "autoload-dev": {
         "psr-4": {

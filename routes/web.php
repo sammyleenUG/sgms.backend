@@ -12,3 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 | db user eyeproxxy_sam pwd O$GZ^5eUbS5t
 */
+
+Route::get('/login-through-app',function(){
+    return view('login');
+});
+
+Route::get('/forgot-password',function(){
+    return view('forgotpassword');
+});
