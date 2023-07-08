@@ -1,8 +1,8 @@
 <center>API DOCUMENTATION</center>
 
 **Setting up**
-To set up the project, run the following artisan commands.
-These commands assume you have your database setup (MYSQL)
+<p>To set up the project, run the following artisan commands.</p>
+<p>These commands assume you have your database setup (MYSQL)</p>
 
 - composer install
 - php artisan migrate
@@ -10,7 +10,7 @@ These commands assume you have your database setup (MYSQL)
 
 
 **Running background processes**
-The system is complete when the following cron jobs are running.
+<p>The system is complete when the following cron jobs are running.</p>
 
 - php artisan bins:binEmptied ( set to run every minute)
 - php artisan bins:binFull (set to run every minute)
