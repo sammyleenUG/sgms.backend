@@ -1,9 +1,9 @@
 <?php
 
 /**
- * 
+ *
  * Function to generate reference number
- * 
+ *
  */
 function gen_ref_number(int $id)
 {
@@ -19,9 +19,9 @@ function gen_ref_number(int $id)
 
 
 /**
- * 
+ *
  * Function to get name of a place using coordinates
- * 
+ *
  */
 
 function getLocation($latitude, $longitude)
@@ -49,4 +49,15 @@ function getLocation($latitude, $longitude)
     } else {
         return  "Error";
     }
+}
+
+
+function saveNotification($title,$icon,$category,$action = Null){
+    \App\Models\Notification::query()->insert([
+        'title' => $title,
+        'icon' => $icon,
+        'category' => $category,
+        'action'=> $action,
+        'created_at' => now(),
+    ]);
 }
