@@ -1,10 +1,20 @@
+<center>API DOCUMENTATION</center>
 
-## About The API
+**Setting up**
+To set up the project, run the following artisan commands.
+These commands assume you have your database setup (MYSQL)
 
-This API is mainly suited for mobile applications
-<<<<<<< HEAD
-API endpoints are;
-=======
+- composer install
+- php artisan migrate
+- php artisan optimize:clear
 
 
->>>>>>> 21bd9a6af5bba39d92a3ed78ec8a153b681a8063
+**Running background processes**
+The system is complete when the following cron jobs are running.
+
+- php artisan bins:binEmptied ( set to run every minute)
+- php artisan bins:binFull (set to run every minute)
+- php artisan bins:update_status (set to run every 30 seconds)
+- php artisan bins:recommendation (set to run every 6 hours)
+
+
